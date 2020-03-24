@@ -1,0 +1,165 @@
+.ol-overlaycontainer-stopevent{
+    visibility: collapse !important;
+}
+
+#navbarTopo{
+    z-index: 1000;
+}
+
+.header-fixed #header {
+    position: fixed;
+}
+
+.text-primary{
+	color:#2b323a !important;
+}
+
+#sidebar{
+    background: #2b323a;
+    position: absolute;
+    border-right: 1px solid transparent;
+    height: 98%;
+    top: 56px;
+    left: 0;
+    width: auto;
+    z-index: 810;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+#sidebar ul{
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    list-style: none;
+}
+
+#sidebar:hover ul{
+    width: 100%;
+}
+
+#sidebar ul li{
+    margin-top: 5px;
+    /*width: 100%;*/
+    overflow: hidden;
+}
+
+#sidebar ul li.title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: "Open Sans Bold", sans-serif;
+    /*opacity: 0;*/
+    opacity: 1;
+    transition: opacity 0.5s cubic-bezier(0.15, 0.99, 0.18, 1.01);
+}
+
+#sidebar{
+    overflow-y: auto;
+}
+
+/* BTN'S OPTIONS - SIDEBAR */
+.btn-options{
+    color: #FFF;
+    border: none;
+    display: block;
+    padding: 2px 4px 2px 4px;
+    cursor: pointer;
+    font-size: 11px;
+    max-width: 12ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.layer-content{
+    height:100%;
+}
+
+.layers_padrao{
+    float: left;
+    height: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.btnViewDesenho, .btnCadastro{
+    background-color: transparent;
+    border-color:transparent;
+    color:#FFF !important;
+    font-size: 12px;
+    pointer-events: none;
+    padding: 6px;
+}
+
+/* BTN'S OPTIONS - SIDEBAR */
+.btn-options{
+    color: #FFF;
+    border: none;
+    display: block;
+    padding: 2px 4px 2px 4px;
+    cursor: pointer;
+    font-size: 11px;
+    max-width: 12ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.btn-options.ativo{
+    background-color: rgba(255,255,255,.20);
+}
+.btn-options i{
+    font-size: 100%;
+    color: #FFF;
+}
+.btn-options:hover{
+    text-decoration: none !important;
+    color: #FFF;
+    background-color: rgba(255,255,255,.10);
+}
+.btn-options:focus,
+.btn-options:active{
+    text-decoration: none !important;
+    color: #FFF;
+}
+
+.btn-options a{
+    text-decoration: none;
+    color: #FFF !important;
+    padding: 7px;
+}
+
+.btn-options.ativo {
+    background-color: rgba(255,255,255,.20);
+    box-shadow: -2px -2px #999;
+  }
+
+#divSGQ, #divSCP, #divInfo, #divNav, #divBtnDesenho{
+    cursor: pointer;
+}
+#divSGQ:hover, #divInfo:hover, #divBtnDesenho:hover {
+    background-color: rgba(255,255,255,.10);
+}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-content {
+    width:inherit;
+    height:inherit;
+    margin: 0 auto;
+}

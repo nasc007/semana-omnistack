@@ -1,0 +1,56 @@
+<html>
+<body><!-- make sure the attribute enctype is set to multipart/form-data -->
+<form method="post" action="http://192.168.0.49/api/ocorrencia/create" enctype="multipart/form-data">
+    <!-- upload of a single file -->
+    <p>
+        <label>cod_tipo_ocorrencia: </label><br/>
+        <input type="number" name="cod_tipo_ocorrencia"/>
+    </p>
+	<p>
+        <label>cod_agente: </label><br/>
+        <input type="number" name="cod_agente"/>
+    </p>
+	<p>
+        <label>dsc_inscricao: </label><br/>
+        <input type="text" name="dsc_inscricao"/>
+    </p>
+	<p>
+        <label>vlr_pos_x: </label><br/>
+        <input type="text" name="vlr_pos_x"/>
+    </p>
+	<p>
+        <label>vlr_pos_y: </label><br/>
+        <input type="text" name="vlr_pos_y"/>
+    </p>
+	<p>
+        <label>dat_ocorrencia: </label><br/>
+        <input type="datetime" name="dat_ocorrencia"/>
+    </p>
+	<p>
+        <label>nom_atendente: </label><br/>
+        <input type="text" name="nom_atendente"/>
+    </p>
+	<p>
+        <label>tip_atendente: </label><br/>
+        <input type="number" name="tip_atendente"/>
+    </p>
+	<p>
+        <label>dsc_observacao: </label><br/>
+        <input type="text" name="dsc_observacao"/>
+    </p>
+
+    <!-- multiple input fields for the same input name, use brackets -->
+    <p>
+        <label>Add files (up to 2): </label><br/>
+        <input type="file" name="file[]"/><br/>
+        <input type="file" name="file[]"/>
+        <input type="file" name="file[]"/><br/>
+        <input type="file" name="file[]"/>
+    </p>
+
+    <p>
+        <input type="submit"/>
+    </p>
+</form>
+</body>
+</html>
